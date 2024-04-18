@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="/login.css">
+
+</head>
+
+<body>
+    <h1 class="jj">Welcome to E-Feedback System</h1>
+    <div class="container">
+        <div class="center">
+            <h1 class="s">Sign in</h1>
+            <form action="/hod_login" method="POST">
+              
+                <div class="txt_field">
+                    <input type="email" name="email" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass"> <a href="#">Forget Password?</a></div>
+                <input name="submit" type="Submit" value="Login" onclick="redirectToRegistrationPage()">
+                <div class="signup_link">
+                    Not a Member ? <a href="#" class="jjj">Sign up</a>
+                    <div class="homej">
+                        Back to Home ? <a href="#" class="jjj">Home</a>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

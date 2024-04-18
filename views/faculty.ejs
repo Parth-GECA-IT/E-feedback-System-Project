@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Feedback Report</title>
+    <link rel="stylesheet" href="/faculty.css">
+</head>
+
+<body>
+
+    <span class="caption">Teacher Feedback Report</span>
+
+    <div class="dropdown-cont">
+        <form action="feedback_search" method="post">
+            <label for="session">Session</label>
+            <select name="session" class="dropdown" id="session">
+                <option value="op1">ESE May-June 2024</option>
+                <option value="op2">option 2</option>
+                <option value="op3">option 3</option>
+                <option value="op4">option 4</option>
+            </select>
+            <label for="semester">Semester</label>
+            <select name="semester" class="dropdown" id="semester">
+                <option value="op1">V</option>
+                <option value="op2">option 2</option>
+                <option value="op3">option 3</option>
+                <option value="op4">option 4</option>
+            </select>
+
+            <label for="course">Course</label>
+            <select name="course" class="dropdown" id="course">
+                <option value="ITPC-3003 Machine Learning">ITPC-3003 Machine Learning</option>
+                <option value="ITPC-3010 Computer Programming Lab II">ITPC-3010 Computer Programming Lab II
+                </option>
+                <option value="ITPE3002 Lab - Mobile Computing">ITPE3002 Lab - Mobile Computing</option>
+                <option value="ITPE3003 Cryptography and Network Security">ITPE3003 Cryptography and Network Security
+                </option>
+                <option value="ITPE3004 Lab Cryptography and Network Security">ITPE3004 Lab Cryptography and Network
+                    Security</option>
+                <option value="ITPE3007 Data Mining">ITPE3007 Data Mining</option>
+                <option value="ITPE3008 Lab Data Mining">ITPE3008 Lab Data Mining</option>
+                <option value="ITPE3032 Deep Learning">ITPE3032 Deep Learning</option>
+
+            </select>
+
+            <input class="submit" type="submit" name="Search">
+        </form>
+    </div>
+    
+    <div class="grid-container feedback-table">
+
+        <div class="tableheadings">Serial no.</div>
+        <div class="tableheadings">Questions</div>
+        <div class="tableheadings">Below Average</div>
+        <div class="tableheadings">Average</div>
+        <div class="tableheadings">Good</div>
+        <div class="tableheadings">Very Good</div>
+        <div class="tableheadings">Excellent</div>
+
+        <% applications.forEach(application=> { %>
+            <div class="serialno">1</div>
+            <div class="question">Has the Teacher covered the entire Syllabus as prescribed by University College Board?
+            </div>
+            <div class="belowave">
+                <%= application.q1_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q1_average %>
+            </div>
+            <div class="good">
+                <%= application.q1_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q1_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q1_excellent %>
+            </div>
+
+
+            <div class="serialno">2</div>
+            <div class="question">Has the Teacher covered relevant topics beyond syllabus?</div>
+            <div class="belowave">
+                <%= application.q2_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q2_average %>
+            </div>
+            <div class="good">
+                <%= application.q2_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q2_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q2_excellent %>
+            </div>
+
+            <div class="serialno">3</div>
+            <div class="question">Effectiveness of Teacher in terms of: Technical content/course content, Communication
+                skills, Use of teaching aids</div>
+            <div class="belowave">
+                <%= application.q3_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q3_average %>
+            </div>
+            <div class="good">
+                <%= application.q3_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q3_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q3_excellent %>
+            </div>
+
+            <div class="serialno">4</div>
+            <div class="question">Pace on which contents were covered?</div>
+            <div class="belowave">
+                <%= application.q4_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q4_average %>
+            </div>
+            <div class="good">
+                <%= application.q4_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q4_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q4_excellent %>
+            </div>
+
+            <div class="serialno">5</div>
+            <div class="question">Motivation and inspiration for students to Learn?</div>
+            <div class="belowave">
+                <%= application.q5_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q5_average %>
+            </div>
+            <div class="good">
+                <%= application.q5_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q5_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q5_excellent %>
+            </div>
+
+            <div class="serialno">6</div>
+            <div class="question">Support for the development of Students' Skill: Practical demonstration, Hands on
+                training.</div>
+            <div class="belowave">
+                <%= application.q6_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q6_average %>
+            </div>
+            <div class="good">
+                <%= application.q6_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q6_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q6_excellent %>
+            </div>
+
+            <div class="serialno">7</div>
+            <div class="question">Clarity of expectations of students</div>
+            <div class="belowave">
+                <%= application.q7_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q7_average %>
+            </div>
+            <div class="good">
+                <%= application.q7_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q7_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q7_excellent %>
+            </div>
+
+            <div class="serialno">8</div>
+            <div class="question">Feedback provided on Students' progress.</div>
+            <div class="belowave">
+                <%= application.q8_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q8_average %>
+            </div>
+            <div class="good">
+                <%= application.q8_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q8_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q8_excellent %>
+            </div>
+
+            <div class="serialno">9</div>
+            <div class="question">Willingness to offer help and advice to students.</div>
+            <div class="belowave">
+                <%= application.q9_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q9_average %>
+            </div>
+            <div class="good">
+                <%= application.q9_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q9_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q9_excellent %>
+            </div>
+
+            <div class="serialno">10</div>
+            <div class="question">What was your overall experience?</div>
+            <div class="belowave">
+                <%= application.q10_below_average %>
+            </div>
+            <div class="average">
+                <%= application.q10_average %>
+            </div>
+            <div class="good">
+                <%= application.q10_good %>
+            </div>
+            <div class="veryg">
+                <%= application.q10_very_good %>
+            </div>
+            <div class="excellent">
+                <%= application.q10_excellent %>
+            </div>
+
+            <% }); %>
+    </div>
+    <button class="print buttons" type="print" onclick="printPage()">Print</button>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+
+</body>
+
+</html>

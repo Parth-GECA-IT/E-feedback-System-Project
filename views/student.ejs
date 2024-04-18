@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="/student.css">
+</head>
+
+<body>
+    <div class="feedback-form">
+        <h1>STUDENT FEEDBACK FORM</h1>
+        <form id="feedback-form" action="feedback_submit" method="post">
+            <div class="dropdwn">
+                <div class="course-class">
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        
+                        <option value="ITPC-3003 Machine Learning">ITPC-3003 Machine Learning</option>
+                        <option value="ITPC-3010 Computer Programming Lab II">ITPC-3010 Computer Programming Lab II
+                        </option>
+                        <option value="ITPE3002 Lab - Mobile Computing">ITPE3002 Lab - Mobile Computing</option>
+                        <option value="ITPE3003 Cryptography and Network Security">ITPE3003 Cryptography and Network
+                            Security</option>
+                        <option value="ITPE3004 Lab Cryptography and Network Security
+                        ">ITPE3004 Lab Cryptography and Network Security
+                        </option>
+                        <option value="ITPE3004 Lab Cryptography and Network Security">ITPE3004 Lab Cryptography and Network Security</option>
+                        <option value="ITPE3007 Data Mining">ITPE3007 Data Mining</option>
+                        <option value="ITPE3008 Lab Data Mining">ITPE3008 Lab Data Mining</option>
+                        <option value="ITPE3032 Deep Learning">ITPE3032 Deep Learning</option>
+
+                        
+                    </select>
+                </div>
+                <div class="instructor-class">
+                    <label for="instructor">Instructor:</label>
+                    <select id="faculty" name="faculty" required>
+                        <option value="Prof. R.B. Mannade">Prof. R.B. Mannade</option>
+                        <option value="Prof. Anjana Ghule">Prof. Anjana Ghule</option>
+                        <option value="Prof. S. Nemade">Prof. S. Nemade</option>
+                        <option value="Prof. Shraddha Dhumale">Prof. Shraddha Dhumale</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="q1">Q.1 Has the Teacher covered the entire Syllabus as prescribed by University College
+                    Board?</label>
+                <div class="rating-container">
+                    <input type="radio" id="q1-1" name="q1" value="Below Average" required>
+                    <label for="q1-1">1</label>
+
+                    <input type="radio" id="q1-2" name="q1" value="Average" required>
+                    <label for="q1-2">2</label>
+
+                    <input type="radio" id="q1-3" name="q1" value="Good" required>
+                    <label for="q1-3">3</label>
+
+                    <input type="radio" id="q1-4" name="q1" value="Very Good" required>
+                    <label for="q1-4">4</label>
+
+                    <input type="radio" id="q1-5" name="q1" value="Excellant" required>
+                    <label for="q1-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.2 Has the Teacher covered relevant topics beyond syllabus?</label>
+                <div class="rating-container">
+                    <input type="radio" id="q2-1" name="q2" value="Below Average" required>
+                    <label for="q2-1">1</label>
+                    <input type="radio" id="q2-2" name="q2" value="Average" required>
+                    <label for="q2-2">2</label>
+                    <input type="radio" id="q2-3" name="q2" value="Good" required>
+                    <label for="q2-3">3</label>
+                    <input type="radio" id="q2-4" name="q2" value="Very Good" required>
+                    <label for="q2-4">4</label>
+                    <input type="radio" id="q2-5" name="q2" value="Excellant" required>
+                    <label for="q2-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+                <div class="labels">
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.3 Effectiveness of Teacher in terms of: Technical content/course content,
+                    Communication skills, Use of teaching aids</label>
+                <div class="rating-container">
+                    <input type="radio" id="q3-1" name="q3" value="Below Average" required>
+                    <label for="q3-1">1</label>
+                    <input type="radio" id="q3-2" name="q3" value="Average" required>
+                    <label for="q3-2">2</label>
+                    <input type="radio" id="q3-3" name="q3" value="Good" required>
+                    <label for="q3-3">3</label>
+                    <input type="radio" id="q3-4" name="q3" value="Very Good" required>
+                    <label for="q3-4">4</label>
+                    <input type="radio" id="q3-5" name="q3" value="Excellant" required>
+                    <label for="q3-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.4 Pace on which contents were covered?</label>
+                <div class="rating-container">
+                    <input type="radio" id="q4-1" name="q4" value="Below Average" required>
+                    <label for="q4-1">1</label>
+                    <input type="radio" id="q4-2" name="q4" value="Average" required>
+                    <label for="q4-2">2</label>
+                    <input type="radio" id="q4-3" name="q4" value="Good" required>
+                    <label for="q4-3">3</label>
+                    <input type="radio" id="q4-4" name="q4" value="Very Good" required>
+                    <label for="q4-4">4</label>
+                    <input type="radio" id="q4-5" name="q4" value="Excellant" required>
+                    <label for="q4-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.5 Motivation and inspiration for students to Learn?</label>
+                <div class="rating-container">
+                    <input type="radio" id="q5-1" name="q5" value="Below Average" required>
+                    <label for="q5-1">1</label>
+                    <input type="radio" id="q5-2" name="q5" value="Average" required>
+                    <label for="q5-2">2</label>
+                    <input type="radio" id="q5-3" name="q5" value="Good" required>
+                    <label for="q5-3">3</label>
+                    <input type="radio" id="q5-4" name="q5" value="Very Good" required>
+                    <label for="q5-4">4</label>
+                    <input type="radio" id="q5-5" name="q5" value="Excellant" required>
+                    <label for="q5-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.6 Support for the development of Students' Skill: Practical demonstration, Hands on
+                    training</label>
+                <div class="rating-container">
+                    <input type="radio" id="q6-1" name="q6" value="Below Average" required>
+                    <label for="q6-1">1</label>
+                    <input type="radio" id="q6-2" name="q6" value="Average" required>
+                    <label for="q6-2">2</label>
+                    <input type="radio" id="q6-3" name="q6" value="Good" required>
+                    <label for="q6-3">3</label>
+                    <input type="radio" id="q6-4" name="q6" value="Very Good" required>
+                    <label for="q6-4">4</label>
+                    <input type="radio" id="q6-5" name="q6" value="Excellant" required>
+                    <label for="q6-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.7 Clarity of expectations of students</label>
+                <div class="rating-container">
+                    <input type="radio" id="q7-1" name="q7" value="Below Average" required>
+                    <label for="q7-1">1</label>
+                    <input type="radio" id="q7-2" name="q7" value="Average" required>
+                    <label for="q7-2">2</label>
+                    <input type="radio" id="q7-3" name="q7" value="Good" required>
+                    <label for="q7-3">3</label>
+                    <input type="radio" id="q7-4" name="q7" value="Very Good" required>
+                    <label for="q7-4">4</label>
+                    <input type="radio" id="q7-5" name="q7" value="Excellant" required>
+                    <label for="q7-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.8 Feedback provided on Students' progress.</label>
+                <div class="rating-container">
+                    <input type="radio" id="q8-1" name="q8" value="Below Average" required>
+                    <label for="q8-1">1</label>
+                    <input type="radio" id="q8-2" name="q8" value="Average" required>
+                    <label for="q8-2">2</label>
+                    <input type="radio" id="q8-3" name="q8" value="Good" required>
+                    <label for="q8-3">3</label>
+                    <input type="radio" id="q8-4" name="q8" value="Very Good" required>
+                    <label for="q8-4">4</label>
+                    <input type="radio" id="q8-5" name="q8" value="Excellant" required>
+                    <label for="q8-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.9 Willingness to offer help and advice to students.</label>
+                <div class="rating-container">
+                    <input type="radio" id="q9-1" name="q9" value="Below Average" required>
+                    <label for="q9-1">1</label>
+                    <input type="radio" id="q9-2" name="q9" value="Average" required>
+                    <label for="q9-2">2</label>
+                    <input type="radio" id="q9-3" name="q9" value="Good" required>
+                    <label for="q9-3">3</label>
+                    <input type="radio" id="q9-4" name="q9" value="Very Good" required>
+                    <label for="q9-4">4</label>
+                    <input type="radio" id="q9-5" name="q9" value="Excellant" required>
+                    <label for="q9-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+            <div class="question">
+                <label for="q2">Q.10 What was your overall experience?</label>
+                <div class="rating-container">
+                    <input type="radio" id="q10-1" name="q10" value="Below Average" required>
+                    <label for="q10-1">1</label>
+                    <input type="radio" id="q10-2" name="q10" value="Average" required>
+                    <label for="q10-2">2</label>
+                    <input type="radio" id="q10-3" name="q10" value="Good" required>
+                    <label for="q10-3">3</label>
+                    <input type="radio" id="q10-4" name="q10" value="Very Good" required>
+                    <label for="q10-4">4</label>
+                    <input type="radio" id="q10-5" name="q10" value="Excellant" required>
+                    <label for="q10-5">5</label>
+                </div>
+                <div class="labels">
+                    <div class="label1">Below Average</div>
+                    <div class="label2">Average</div>
+                    <div class="label3">Good</div>
+                    <div class="label4">Very Good</div>
+                    <div class="label5">Excellant</div>
+                </div>
+            </div>
+
+            <div class="submit-container">
+                <button class="submit" type="submit">Submit Feedback</button>
+            </div>
+            <script src="student.js"></script>
+</body>
+
+</html>

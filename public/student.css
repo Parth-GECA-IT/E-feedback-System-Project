@@ -1,0 +1,194 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* width: 65vw; */
+    margin: 0 auto;
+    /* background-color: #000; */
+
+    /* background-image: url("https://cdn.pixabay.com/animation/2023/01/24/23/10/23-10-04-56_256.gif");
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+.feedback-form {
+    background-color: #e2fddb;
+    
+    /* background-color: #031a47b6;
+    color: white; */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 8px black;
+}
+
+/* Media queries for responsive layout (example) */
+@media only screen and (max-width: 768px) {
+    .feedback-form {
+      width: 80%;
+    }
+  }
+
+.feedback-form h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.dropdwn {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.coures-class {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inst-class {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropbtn {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.labels {
+    display: flex;
+    justify-content: space-around;
+}
+
+.label1,
+.label2,
+.label3,
+.label4,
+.label5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 13rem;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+.question {
+    padding-top: 2%;
+    margin-bottom: 15px;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.rating-container input[type="radio"] {
+    display: none;
+}
+
+.rating-container label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.rating-container label:hover {
+    background-color: #ffc700;
+}
+
+.rating-container input[type="radio"]:checked+label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.question textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.feedback-form .dropbtn:hover {
+    background-color: #3e8e41;
+}
+.submit-container{
+    display: flex;
+    justify-content:center ;
+    margin-top: 50px;
+}
+
+.submit {
+    background-color: #04AA6D;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.submit:hover {
+    background-color: #005c3a;
+    color: white;
+    box-shadow: 0 0 12px rgb(97, 97, 97);
+    cursor: pointer;
+    scale: 1.2;
+    transition: scale,box-shadow 0.5s;
+}
