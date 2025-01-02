@@ -4,7 +4,7 @@ const connection = mysql.createConnection(
     {
         host:'localhost',
         user:'root',
-        password:'Chanu@17',
+        password:'',
         port:3306,
         database:'feedback_database'
     }
