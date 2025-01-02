@@ -11,11 +11,10 @@ const connection = mysql.createConnection(
 );
 
 connection.connect((err)=>{
-    if(err){console.log(err)
-       
+    if(err){
+        console.log(err)
     }
     else{console.log('feedback_database connected...')}
 });
-
 
 module.exports=(connection);
