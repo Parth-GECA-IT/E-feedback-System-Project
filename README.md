@@ -90,5 +90,3 @@ E-Feedback/
 
 - **Dhruv Punekar** - [LinkedIn](https://www.linkedin.com/in/dhruv-punekar-a57299277/) | [GitHub](https://github.com)
 - **Prakhar Singh** - [LinkedIn](https://www.linkedin.com/in/prakhar-singh-1b9614185/) | [GitHub](https://github.com/prakharsingh1923/E-voting-Dapp)
-
-Feel free to customize this README as per your project's specific requirements!
