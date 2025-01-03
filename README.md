@@ -35,7 +35,7 @@ E-Feedback/
 ### Steps
 1. Clone the repository:
     ```
-    git clone <repository-url>
+    git clone https://github.com/Parth-GECA-IT/E-feedback-System-Project.git
     cd E-Feedback
     ```
 
@@ -89,4 +89,4 @@ E-Feedback/
 - **Parth Armarkar** - [LinkedIn](http://www.linkedin.com/in/parth-armarkar-052551289) | [GitHub](https://github.com/Parth-GECA-IT)
 
 - **Dhruv Punekar** - [LinkedIn](https://www.linkedin.com/in/dhruv-punekar-a57299277/) | [GitHub](https://github.com)
-- **Prakhar Singh** - [LinkedIn](https://www.linkedin.com/in/prakhar-singh-1b9614185/) | [GitHub](https://github.com/prakharsingh1923/E-voting-Dapp)
+- **Prakhar Singh** - [LinkedIn](https://www.linkedin.com/in/prakhar-singh-1b9614185/) | [GitHub](https://github.com/prakharsingh1923/)
